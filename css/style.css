@@ -20,7 +20,7 @@ Style List:
 
 html{
 	width:100%;
-	overflow:hidden;
+	overflow-x:hidden;
 }
 body{
 	color : #767676;
@@ -58,14 +58,13 @@ p.description{
     float: none;
     margin: 0 auto;
 }
-}
 .main-menu.tiny{
 	padding-top: 0px;
 	padding-bottom: 0px;
 	position: fixed;
 	top:0; left:0; right:0; z-index:300;
 }
-.main-menu.tiny .navbar-top{
+.main-menu.tiny .navbar-top {
 	display:none;
 }
 .main-menu .navbar-nav > li > a{
@@ -95,9 +94,6 @@ p.description{
 	border-bottom: 1px solid transparent;
 }
 
-.navbar-brand{
-
-}
 .navbar-toggle {
     z-index:3;
 }
@@ -111,10 +107,55 @@ p.description{
 
 /*HEADER*/
 
-header {
-	position:absolute;
+.bgimage{
 	width:100%;
-	height: 100vh;
+	min-height:670px;
+	text-align: center;
+	position:relative;
+}
+#bgimage .logo{
+	padding-top:40px;
+}
+#bgimage .heading-text{
+	padding-top:30px;
+}
+#bgimage .border{
+	padding-bottom :10px;
+}
+
+#bgimage.header-image{
+	background-image: url(../img/header-img.jpg);
+	background-position: center-top;
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size :cover;
+	background-size: cover;
+	background-attachment: fixed;
+	height:100%;
+	overflow:hidden;
+}
+#bgimage .main-heading{
+	width:55%;
+	margin-top: 72px;
+	color:#fff !important;
+}
+#bgimage.header-image h1:after{
+	display : block;
+	width:120px;
+	margin :30px 0;
+	content:"";
+}
+#bgimage.header-image p {
+	width:50%;
+	color :#fff;
+	margin-bottom:50px;
+}
+
+header {
+	position:relative;
+	width:100%;
+	height: 95vh;
 	background: url(../img/header-img.jpg);
 	background-size: cover;
 	-webkit-background-size:cover;
@@ -125,7 +166,7 @@ header {
 	z-index:2;
 	width:100%;
 	position:absolute;
-	top:45%;
+	top:40%;
 	left:0;
 	transform: translate(0, -50%); 
 	-webkit-transform: translate(0, -50%); 
@@ -135,7 +176,7 @@ header {
 	text-align:center;
 }
 .heading-text{
-	margin-top :60px;
+	margin-top :40px;
 }
 .heading-text h1{
 	color :#ffffff;
@@ -146,3 +187,6 @@ header {
 	position:absolute;
 	width:100%;
 }
+
+/*ABOUT*/
+
