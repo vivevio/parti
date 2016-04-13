@@ -190,3 +190,83 @@ header {
 
 /*ABOUT*/
 
+/*about-apa sih parti*/
+
+/* 
+about-info
+container
+image question
+judul apa sih parti h4
+border merah
+about p
+
+thumb-video
+video-button
+img / hoverlah
+*/
+
+#about{
+	padding-top: 0px;
+}
+
+#about .container{
+	margin-top:75px;
+	margin-bottom:150px;
+}
+#about img{
+	margin-bottom:25px;
+	margin-left:10px;
+	position:relative;
+}
+#about .about-info h4{
+	color : #252525;
+	font-size:30px;
+}
+#about .about-info h4:after{
+	border-top: 3px solid #d6332c;
+	display:block;
+	width:35px;
+	margin: 30px 0;
+	content: "";
+}
+#about .about-info p{
+	font-size:14px;
+	color:#464646;
+}
+#about .about-info .thumb-video:last-child{
+	margin-bottom: 0;
+}
+
+/*EVENT*/
+
+#event{
+	padding-top: 0px;
+}
+
+#event .container{
+	margin-top:75px;
+	margin-bottom:150px;
+}
+#event img{
+	margin-bottom:25px;
+	margin-left:10px;
+	position:relative;
+}
+#event .event-info h4{
+	color : #252525;
+	font-size:30px;
+}
+#event .event-info h4:after{
+	border-top: 3px solid #d6332c;
+	display:block;
+	width:35px;
+	margin: 30px 0;
+	content: "";
+}
+#event .event-info p{
+	font-size:14px;
+	color:#464646;
+}
+#event .event-info .thumb-video:last-child{
+	margin-bottom: 0;
+}

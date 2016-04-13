@@ -1,4 +1,14 @@
-// ====Navbar=====
+$(document).ready(function(){
+	"use strict";
+
+	$('body').scrollspy({
+		target:'.navbar',
+		offset:160
+	});
+});
+
+
+// ====Navbar fixed=====
 
 jQuery(window).scroll(function(){
 	var top = jQuery(document).scrollTop();
