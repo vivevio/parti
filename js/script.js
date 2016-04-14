@@ -22,3 +22,22 @@ jQuery(window).scroll(function(){
 		jQuery('.main-menu').removeClass('tiny');
 	}
 });
+
+
+// owl-carousel
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});

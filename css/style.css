@@ -190,21 +190,6 @@ header {
 
 /*ABOUT*/
 
-/*about-apa sih parti*/
-
-/* 
-about-info
-container
-image question
-judul apa sih parti h4
-border merah
-about p
-
-thumb-video
-video-button
-img / hoverlah
-*/
-
 #about{
 	padding-top: 0px;
 }
@@ -239,18 +224,68 @@ img / hoverlah
 
 /*EVENT*/
 
+/*owl-carousel*/
+
+#event .owl-carousel{
+	width:394px;
+	height:450px;
+	background-color: #fff;
+	margin-top:100px;
+	margin-left:30px;
+	overflow: hidden;
+}
+#event .owl-carousel .keterangan{
+	margin:0;
+	padding : 20px;
+}
+#event .owl-carousel img{
+	margin:0;
+	padding :0;
+}
+#event .owl-carousel p{
+	color :#464646;
+	font-size :13px;
+}
+#event .owl-carousel h5{
+	color:#d6332c;
+	margin-top:18px;
+	font-size: 15px;
+}
+#event .owl-carousel h4{
+	color:#d6332c;
+	font-size: 20px;
+}
+#event .owl-carousel .more{
+	width:100%;
+	margin-top:25px;
+	text-align: center;
+}
+#event .owl-carousel .more a{
+	color:#898989;
+	font-size: 14px;
+	text-align: center;	
+}
+/*end of owl-carousel*/
+
 #event{
 	padding-top: 0px;
 }
 
+#event .greyscale{
+	width:100%;
+	background-color: #fafafa;
+	position:relative;
+}
 #event .container{
 	margin-top:75px;
 	margin-bottom:150px;
 }
 #event img{
 	margin-bottom:25px;
-	margin-left:10px;
 	position:relative;
+}
+#event .event-info{
+	margin-top:100px;
 }
 #event .event-info h4{
 	color : #252525;
@@ -267,6 +302,6 @@ img / hoverlah
 	font-size:14px;
 	color:#464646;
 }
-#event .event-info .thumb-video:last-child{
+#event .event-info .owl-carousel:last-child{
 	margin-bottom: 0;
 }
