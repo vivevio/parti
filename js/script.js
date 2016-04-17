@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 
 // ====Navbar fixed=====
-
+/*
 jQuery(window).scroll(function(){
 	var top = jQuery(document).scrollTop();
 	var batas = jQuery(window).height();
@@ -22,22 +22,18 @@ jQuery(window).scroll(function(){
 		jQuery('.main-menu').removeClass('tiny');
 	}
 });
-
+*/
 
 // owl-carousel
 
+$(document).ready(function(){
 $('.owl-carousel').owlCarousel({
     loop:true,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
+    items:1,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:7000
 });
+});
+
+

@@ -18,6 +18,65 @@ Style List:
 
 /*General*/
 
+@font-face {
+    font-family: 'droidsans_r';
+    src: url('font/droid_sans_regular/droidsans-webfont.eot');
+    src: url('font/droid_sans_regular/droidsans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/droid_sans_regular/droidsans-webfont.woff2') format('woff2'),
+         url('font/droid_sans_regular/droidsans-webfont.woff') format('woff'),
+         url('font/droid_sans_regular/droidsans-webfont.ttf') format('truetype'),
+         url('font/droid_sans_regular/droidsans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('font/open_sans_light/opensans-light-webfont.eot');
+    src: url('font/open_sans_light/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/open_sans_light/opensans-light-webfont.woff2') format('woff2'),
+         url('font/open_sans_light/opensans-light-webfont.woff') format('woff'),
+         url('font/open_sans_light/opensans-light-webfont.ttf') format('truetype'),
+         url('font/open_sans_light/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
+	font-family: 'open_sanslight';
+	font-size: 36px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 38px;
+}
+h2 {
+	font-family: 'Open Sans';
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 32px;
+	color:#252525;
+}
+h3 {
+	font-family: 'open_sanslight';
+	font-size: 36px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 38px;
+	color:#252525;
+}
+h5 {
+	font-family: 'Open Sans';
+	font-size: 18px;
+	font-variant: normal;
+	font-weight: 600;
+	line-height: 20px;
+	color:#ffe980;
+	text-transform: uppercase;
+}
+
 html{
 	width:100%;
 	overflow-x:hidden;
@@ -34,7 +93,7 @@ body{
 	margin-bottom : 96px;
 }
 p{
-	font:normal 16px "Open Sans",arial,sans-serif;
+	font:normal 16px 'Open Sans';
 }
 
 .center-content{
@@ -50,12 +109,11 @@ p.description{
 /*NAVBAR*/
 
 .main-menu{
-	background-color: #d6332c;
+	background-color: #d23230;
 	border-radius: 0;
-	border : 0px transparent;
 	-moz-border-radius:0px;
 	-webkit-border-radius:0px;
-    float: none;
+    position :fixed;
     margin: 0 auto;
 }
 .main-menu.tiny{
@@ -68,6 +126,7 @@ p.description{
 	display:none;
 }
 .main-menu .navbar-nav > li > a{
+	font-family: 'droidsans_r';
 	padding : 20px 13px 10px 13px;
 	font-size:12px;
 	line-height:22px;
@@ -99,10 +158,12 @@ p.description{
 }
 
 .navbar{
-	position : relative;
+	position : fixed;
+	width:100%;
 	min-height: 50px;
 	margin-bottom: 0px;
 	border:none;
+	z-index:999;
 }
 
 /*HEADER*/
@@ -114,10 +175,10 @@ p.description{
 	position:relative;
 }
 #bgimage .logo{
-	padding-top:40px;
+	padding-top:10px;
 }
 #bgimage .heading-text{
-	padding-top:30px;
+	padding-top:10px;
 }
 #bgimage .border{
 	padding-bottom :10px;
@@ -137,25 +198,23 @@ p.description{
 }
 #bgimage .main-heading{
 	width:55%;
-	margin-top: 72px;
 	color:#fff !important;
 }
 #bgimage.header-image h1:after{
 	display : block;
 	width:120px;
-	margin :30px 0;
+	margin :10px 0;
 	content:"";
 }
 #bgimage.header-image p {
 	width:50%;
 	color :#fff;
-	margin-bottom:50px;
 }
 
 header {
 	position:relative;
 	width:100%;
-	height: 95vh;
+	height: 105vh;
 	background: url(../img/header-img.jpg);
 	background-size: cover;
 	-webkit-background-size:cover;
@@ -163,10 +222,11 @@ header {
 	overflow:hidden;
 }
 .main-caption{
+	margin-top: 40px;
 	z-index:2;
 	width:100%;
 	position:absolute;
-	top:40%;
+	top:35%;
 	left:0;
 	transform: translate(0, -50%); 
 	-webkit-transform: translate(0, -50%); 
@@ -174,6 +234,12 @@ header {
 	-ms-transform: translate(0, -50%); 
 	-o-transform: translate(0, -50%); 
 	text-align:center;
+}
+.main-caption a img{
+	margin-top:15px;
+}
+.main-caption a img:hover{
+	margin-top:20px;
 }
 .heading-text{
 	margin-top :40px;
@@ -203,11 +269,7 @@ header {
 	margin-left:10px;
 	position:relative;
 }
-#about .about-info h4{
-	color : #252525;
-	font-size:30px;
-}
-#about .about-info h4:after{
+#about .about-info h2:after{
 	border-top: 3px solid #d6332c;
 	display:block;
 	width:35px;
@@ -232,7 +294,7 @@ header {
 	background-color: #fff;
 	margin-top:100px;
 	margin-left:30px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 #event .owl-carousel .keterangan{
 	margin:0;
@@ -244,16 +306,23 @@ header {
 }
 #event .owl-carousel p{
 	color :#464646;
-	font-size :13px;
+	font-size :14px;
 }
-#event .owl-carousel h5{
+#event .owl-carousel .cp{
 	color:#d6332c;
 	margin-top:18px;
-	font-size: 15px;
+	font-size: 14px;
+	line-height: 16px;
+	font-family: 'Open Sans';	
 }
 #event .owl-carousel h4{
+	font-family: 'Open Sans';
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 26px;
 	color:#d6332c;
-	font-size: 20px;
 }
 #event .owl-carousel .more{
 	width:100%;
@@ -274,11 +343,11 @@ header {
 #event .greyscale{
 	width:100%;
 	background-color: #fafafa;
-	position:relative;
+	height:110vh;
 }
 #event .container{
-	margin-top:75px;
-	margin-bottom:150px;
+	margin-top:100px;
+	margin-bottom:100px;
 }
 #event img{
 	margin-bottom:25px;
@@ -287,11 +356,7 @@ header {
 #event .event-info{
 	margin-top:100px;
 }
-#event .event-info h4{
-	color : #252525;
-	font-size:30px;
-}
-#event .event-info h4:after{
+#event .event-info h3:after{
 	border-top: 3px solid #d6332c;
 	display:block;
 	width:35px;
@@ -302,6 +367,74 @@ header {
 	font-size:14px;
 	color:#464646;
 }
-#event .event-info .owl-carousel:last-child{
-	margin-bottom: 0;
+
+/*SEMINAR*/
+
+#seminar{
+	padding-top: 0px;
+}
+#seminar .dark-bg{
+	width:100%;
+	background-color: #000;
+}
+#seminar .dark-bg .container .judul{
+	color :#fff;
+	margin:50px 0 25px 0;
+}
+#seminar .dark-bg .container .border{
+	border-top: 3px solid #d6332c;
+	display:block;
+	width:35px;
+	margin: 30px auto 25px auto;
+	content: "";
+}
+#seminar .seminar-info{
+	text-align: right;
+	margin-right:20px;
+}
+#seminar .activity{
+	margin-bottom : 50px;
+}
+#seminar img{
+    display: block;
+    margin: 0 auto;
+}
+#seminar h4{
+	font-family: 'open_sanslight';
+	color:#fff;
+	font-size: 24px;
+	line-height: 26px;	
+}
+#seminar p{
+	font-family: 'open_sanslight';
+	color:#fff;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+/*LETS PARTI*/
+
+section.module-black.myparallax{
+	background-image: url(../img/parallax.jpg);
+	min-height:100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+}
+.module-black .content h2{
+	color :#fff;
+}
+.module-black .content p{
+	color :#fff;
+}
+.img-overlay{
+	display: block;
+	min-height: 100%;
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
