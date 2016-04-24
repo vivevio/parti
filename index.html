@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" charset="utf-8">
     <link rel="stylesheet" type="text/css" href="plugin/owl/assets/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="plugin/owl/assets/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="plugin/animate/animate.css">
 
   </head>
   <body>
@@ -51,7 +52,9 @@
 					<h1>Raising Impactful Technology</h1>
 					<h1>Through Innovation</h1>
 				</div>
-				<a href="#about"><img src="img/arrow_down.png"></a>
+				<div class="scrolldown">
+					<a href="#about"><img id="headerarrow" class="animated infinite" src="img/arrow_down.png"></a>
+				</div>
 			</div>
 		</div>
 		<div class="cloud">
@@ -76,9 +79,7 @@
 			</div>
 			<div class="thumb-video">
 				<div class="col-lg-5 col-md-5 col-sm-5 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
-					<div class="video-button">
-						<a href=""><img src="img/playback.png"></a>
-					</div>
+						<a href="video/fun.mp4"><img id="video_button" src="img/playback.png"></a>
 				</div>
 			</div>
 		</div><!-- end of about-info -->
@@ -136,9 +137,7 @@
 				</div>
 			</div>
 	</div>
-	<div class="cloud">
-		<img src="img/cloud-event.png">
-	</div>
+	<img src="img/cloud-event.png">
 </div>
 </section>
 <!-- END OF EVENT -->
@@ -180,7 +179,7 @@
 			</div>
 		
 	</div>
-	<img src="img/workshop.jpg" align="middle">
+	<img src="img/workshop.jpg">
 </div>
 </section>
 <!-- END OF SEMINAR -->
@@ -203,32 +202,46 @@
 <!-- END OF BANNER PARALAX -->
 <!-- CONTACT & FOOTER -->
 <section id="contact">
-	<div class="container contact">
-		<div class="row center-content">
-			<div class="wrapper-contact">
-				<h4>Contact Person</h4>
-				<p class="name">Vio<br>Tika<br>E-mail</p>
-				<p class="number">+62 899 812 8383<br>+62 899 812 8383<br>parti@himtiumb.org</p>
+<div class="maps">
+	<div class="container">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+		<div class="wrapper-contact center-content">
+			<h4>Contact Person</h4>
+			<div class="col-lg-5 col-md-5 col-sm-5">
+				<p class="name">Vio</p>
+				<p class="name">Tika</p>
+				<p class="name">E-mail</p>
 			</div>
+				<p class="number">+62 899 812 8383</p>
+				<p class="number">+62 899 812 8383</p>
+				<p class="number">parti@himtiumb.org</p>
+		</div>
+		<div class="arrow-down center-content"></div>
 		</div>
 	</div>
+</div>
+</section>
+<footer class="footer" id="footer">
 	<div class="container">
-		<div class="copyright-bg copyright center-content">
-			<i class="fa fa-facebook" aria-hidden="true"></i>
-			<i class="fa fa-twitter" aria-hidden="true"></i>
-			<i class="fa fa-instagram" aria-hidden="true"></i>
-			<img src="img/line.png">
+		<div class="copyright center-content">
+			<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href=""><img src="img/line.png"></a>
 			<p>copyright 2016   .   Parti 2016 Official Website</p>
 		</div>
 	</div>
-</section>
+</footer>
 <!-- END OF CONTACT % FOOTER -->
+
 <div class="scrollup">
 	<a href="#"><i class="fa fa-chevron-up"></i></a>
 </div>
-<!-- SCROLL UP -->
+
+<!--JS PLUGIN -->
     <script src="js/jquery/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
     <script src="plugin/bootstrap/js/bootstrap.min.js"></script>
     <script src="plugin/owl/owl.carousel.min.js"></script>
   </body>

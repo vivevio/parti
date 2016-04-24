@@ -136,15 +136,19 @@ p.description{
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
 	background-color: transparent;
-	color:#d6332c;
+	color:#fff;
 }
 .main-menu .navbar-nav > li > a:hover{
-	color:#d6332c;
+	color:#fff;
+	border-bottom: 2px solid #fff;
+}
+.main-menu .navbar-nav > li > a:visited{
+	color:#fff;
 }
 .main-menu .navbar-nav > .active > a, .main-menu .navbar-nav > .active > a:hover, .main-menu .navbar-nav > .active > a:focus{
 	background-color: transparent;
-	color:#d6332c;
-	border-bottom: 1px solid #d6332c;
+	color:#fff;
+    border-bottom: 2px solid #fff;
 }
 
 .main-menu .navbar-nav > li:first-child.active > a{
@@ -238,9 +242,9 @@ header {
 .main-caption a img{
 	margin-top:15px;
 }
-.main-caption a img:hover{
+/*.main-caption a img:hover{
 	margin-top:20px;
-}
+}*/
 .heading-text{
 	margin-top :40px;
 }
@@ -283,6 +287,7 @@ header {
 #about .about-info .thumb-video:last-child{
 	margin-bottom: 0;
 }
+
 
 /*EVENT*/
 
@@ -343,15 +348,16 @@ header {
 #event .greyscale{
 	width:100%;
 	background-color: #fafafa;
-	height:110vh;
 }
 #event .container{
 	margin-top:100px;
 	margin-bottom:100px;
 }
-#event img{
-	margin-bottom:25px;
-	position:relative;
+#seminar img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+	background-size: cover;
 }
 #event .event-info{
 	margin-top:100px;
@@ -398,6 +404,7 @@ header {
 #seminar img{
     display: block;
     margin: 0 auto;
+    width:75%;
 }
 #seminar h4{
 	font-family: 'open_sanslight';
@@ -437,4 +444,108 @@ section.module-black.myparallax{
 	width: 100%;
 	padding-top: 100px;
 	padding-bottom: 100px;
+}
+
+
+/*CONTACT US*/
+
+#contact{
+	padding-top: 0px;
+}
+#contact .maps{
+	width:100%;
+	background-image: url(../img/maps.jpg);
+	min-height: 720px;
+}
+#contact .container .wrapper-contact{
+	width:auto;
+	margin:120px 200px 0px 200px;
+	padding :100px 0px;
+	background-color: #fff;
+	z-index:50;
+}
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	margin-left: 550px;
+	border-top: 20px solid #fff;
+}
+
+#contact .container .wrapper-contact .name{
+	text-align:right;
+}
+#contact .container .wrapper-contact .number{
+	text-align:left;
+}
+#contact h4{
+	font-family: 'open_sanslight';
+	color:#252525;
+	font-size: 36px;
+	line-height: 38px;
+	margin-bottom:30px;
+}
+#contact p{
+	font-family: 'Open Sans';
+	color:#252525;
+	font-size: 24px;
+	line-height: 26px;
+}
+/*FOOTER*/
+
+.footer{
+margin :0;
+padding : 0;
+}
+.footer .container{
+	padding:0;
+	margin:0;
+	width:100%;
+	background-color: #fff;
+}
+.footer .container .copyright{
+	margin: 40px 0;
+}
+.footer .container .copyright a{
+	margin-left :20px;
+
+}
+.footer .container .copyright a i{
+	color: #7d7d7d;
+}
+.footer .container .copyright p{
+	margin-top: 15px;
+	color :#7d7d7d;
+}
+.scrollup{
+	width:30px;
+	height:30px;
+	border-radius: 15px;
+	opacity : .2;
+	position :fixed;
+	bottom : 20px;
+	right : 25px;
+	color : #fff;
+	cursor : pointer;
+	background-color: #000;
+	z-index:50;
+	transition : opacity .5s, background-color;
+	-moz-transition : opacity .5s, background-color;
+	-webkit-transition : opacity .5s, background-color;
+}
+.scrollup:hover{
+	background:#d23230;
+	opacity : 1 ;
+}
+.scrollup i{
+	font-size:13px;
+	position: absolute;
+	opacity:1;
+	color :#fff;
+	left:50%;
+	top:50%;
+	margin-top:-7px;
+	margin-left: -6px;
+	text-decoration: none;
 }
