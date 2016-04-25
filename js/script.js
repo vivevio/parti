@@ -20,7 +20,7 @@ function animationHover(element, animation){
             }, 2000);         
         });
 }
-animationHover('#headerarrow','swing');
+animationHover('#headerarrow','bounce');
 function scrollHover(element, animation){
     element = $(element);
     element.hover(
