@@ -94,6 +94,7 @@ body{
 }
 p{
 	font:normal 16px 'Open Sans';
+	line-height: 1.8em;
 }
 
 .center-content{
@@ -133,6 +134,9 @@ p.description{
 	text-align: center;
 	color : #fff;
 	border-bottom:1px solid transparent;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
 	background-color: transparent;
@@ -226,7 +230,7 @@ header {
 	overflow:hidden;
 }
 .main-caption{
-	margin-top: 40px;
+	margin-top: 60px;
 	z-index:2;
 	width:100%;
 	position:absolute;
@@ -247,9 +251,11 @@ header {
 }*/
 .heading-text{
 	margin-top :40px;
+	margin-bottom: 28px;
 }
 .heading-text h1{
 	color :#ffffff;
+    line-height: 0.8em;
 }
 .cloud img{
 	bottom:0;
@@ -269,7 +275,7 @@ header {
 	margin-bottom:150px;
 }
 #about img{
-	margin-bottom:25px;
+	margin-bottom:12px;
 	margin-left:10px;
 	position:relative;
 }
@@ -286,6 +292,19 @@ header {
 }
 #about .about-info .thumb-video:last-child{
 	margin-bottom: 0;
+}
+.question-mark{
+	position: relative;
+}
+.question-mark:after{
+	position: absolute;
+	content: '';
+	display: block;
+	width: 200px;
+	height: 200px;
+	background: url('../img/question_mark_transparent.png') no-repeat;
+    top: -44px;
+    left: -49px;
 }
 
 
@@ -304,6 +323,7 @@ header {
 #event .owl-carousel .keterangan{
 	margin:0;
 	padding : 20px;
+	background: #fff;
 }
 #event .owl-carousel img{
 	margin:0;
@@ -372,6 +392,19 @@ header {
 #event .event-info p{
 	font-size:14px;
 	color:#464646;
+}
+.dice-mark{
+	position: relative;
+}
+.dice-mark:after{
+	position: absolute;
+	content: '';
+	display: block;
+	width: 200px;
+	height: 200px;
+	background: url('../img/dice_transparent.png') no-repeat;
+    top: 28px;
+    left: 514px;
 }
 
 /*SEMINAR*/
