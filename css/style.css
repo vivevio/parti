@@ -433,23 +433,56 @@ header {
 }
 #seminar .activity{
 	margin-bottom : 50px;
+	padding-right: 10px;
+	position: relative;
+}
+#seminar .activity:before {
+	position: absolute;
+    content: '';
+    width: 7px;
+    height: 196%;
+    background-color: #2F2F2F;
+    top: -25px;
+    right: -26px;
+    z-index: 1;
+}
+#seminar .activity:after {
+	position: absolute;
+	content: '';
+	width: 24px;
+	height: 24px;
+	background-color: #fff;
+    top: 4px;
+    right: -34px;
+    border-radius: 100%;
+    border: 6px solid #000000;
+    z-index: 2;
 }
 #seminar img{
     display: block;
     margin: 0 auto;
     width:75%;
 }
+
 #seminar h4{
 	font-family: 'open_sanslight';
 	color:#fff;
 	font-size: 24px;
 	line-height: 26px;	
 }
-#seminar p{
+#seminar p,
+#seminar .activity span{
 	font-family: 'open_sanslight';
 	color:#fff;
 	font-size: 16px;
-	line-height: 18px;
+}
+.activity span {
+    display: inline-block;
+    position: relative;
+    top: -7px;
+}
+.activity-detail p,  .activity-detail h4 {
+    padding-left: 28px !important;
 }
 
 /*LETS PARTI*/
