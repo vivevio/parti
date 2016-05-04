@@ -1,0 +1,183 @@
+
+@media(min-width:992px) and (max-width: 1199px){
+#bgimage .logo{
+	padding-top:10px;
+}
+#bgimage .heading-text{
+	padding-top:10px;
+}
+#bgimage .border{
+	padding-bottom :10px;
+}
+#bgimage .logo img{
+	width:210px;
+}
+#bgimage .heading-text h1{
+	font-size: 30px;
+}
+
+
+#contact .container .wrapper-contact{
+	width:auto;
+	margin:120px 50px 120px 50px;
+	padding :100px 0px;
+}
+#contact h4{
+	font-size: 30px;
+}
+#contact p{
+	font-size: 20px;
+}
+.arrow-down{
+	border: none;
+}
+}
+@media(min-width:769px) and (max-width: 991px){
+#bgimage .logo{
+	padding-top:10px;
+}
+#bgimage .heading-text{
+	padding-top:10px;
+}
+#bgimage .border{
+	padding-bottom :10px;
+}
+#bgimage .logo img{
+	width:190px;
+}
+#bgimage .heading-text h1{
+	font-size: 25px;
+}
+
+
+#about .thumb-video img{
+	width:250px;
+}
+
+
+#contact .container .wrapper-contact{
+	width:auto;
+	margin:120px 50px 120px 50px;
+	padding :100px 0px;
+}
+#contact h4{
+	font-size: 24px;
+}
+#contact p{
+	font-size: 15px;
+}
+.arrow-down{
+	border: none;
+}
+
+
+#event .owl-carousel{
+	width:320px;
+}
+#event .event-info {
+	margin :10px;
+}
+
+#seminar h1{
+	font-size: 30px;
+}
+#seminar h5{
+	font-size: 15px;
+}
+#seminar h4{
+	font-size: 20px;
+}
+#seminar p{
+	font-size: 14px;
+}
+}
+@media(max-width: 776px){
+
+.navbar-collapse{
+	max-height: 500px !important;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	overflow-x: visible;
+}
+.navbar-nav{
+	width: 100%;
+}
+#bgimage .logo{
+	padding-top:10px;
+}
+#bgimage .heading-text{
+	padding-top:10px;
+}
+#bgimage .border{
+	padding-bottom :20px;
+}
+.main-caption{
+	margin-top: 40px;
+}
+
+#bgimage .logo img{
+	width:180px;
+}
+#bgimage .heading-text h1{
+	font-size: 23px;
+}
+
+
+#about .thumb-video{
+	margin-top:100px;
+}
+
+#contact .maps{
+	min-height: 500px;
+}
+#contact .container .wrapper-contact{
+	margin:30px 30px 30px 30px;
+	padding :50px 20px;
+}
+#contact h4{
+	font-size: 20px;
+}
+#contact p{
+	font-size: 14px;
+}
+.arrow-down{
+	border: none;
+}
+
+
+#event .owl-carousel{
+	width:394px;
+	margin-left:0px auto;
+}
+#event .event-info{
+	margin-right:-50px;
+}
+
+
+#seminar h1{
+	font-size: 25px;
+}
+#seminar h5{
+	font-size: 13px;
+}
+#seminar h4{
+	font-size: 18px;
+}
+#seminar p{
+	font-size: 12px;
+}
+
+
+#parallax .letsparti h2{
+	font-size: 20px;
+}
+#parallax .letsparti p{
+	font-size: 12px;
+}
+
+
+#footer p{
+	font-size: 14px;
+}
+}

@@ -1,21 +1,3 @@
-/*==================
-
-Style List:
-1.General
-2.Navbar
-3.Header
-4.About - Apa sih parti
-5.About - Video have fun
-6.Event - Owl Dota event
-7.Event - Acaranya apa aja
-8.Seminar - List Seminar
-9.Seminar - Membahas
-10.Parallax
-11.Contact Person
-12.Footer 
-
-*/
-
 /*General*/
 
 @font-face {
@@ -208,12 +190,7 @@ p.description{
 	width:55%;
 	color:#fff !important;
 }
-#bgimage.header-image h1:after{
-	display : block;
-	width:120px;
-	margin :10px 0;
-	content:"";
-}
+
 #bgimage.header-image p {
 	width:50%;
 	color :#fff;
@@ -243,12 +220,7 @@ header {
 	-o-transform: translate(0, -50%); 
 	text-align:center;
 }
-.main-caption a img{
-	margin-top:15px;
-}
-/*.main-caption a img:hover{
-	margin-top:20px;
-}*/
+
 .heading-text{
 	margin-top :40px;
 	margin-bottom: 28px;
